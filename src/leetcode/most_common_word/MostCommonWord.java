@@ -17,7 +17,7 @@ class Solution {
             if (c >= 'a' && c <= 'z') {
                 builder.append(c);
             } else if (c >= 'A' && c <= 'Z') {
-                builder.append(Character.toString(c + ('a' - 'A')));
+                builder.append(Character.toString((char) (c + ('a' - 'A'))));
             } else {
                 if(builder.length() > 0){
                     String word = builder.toString();
